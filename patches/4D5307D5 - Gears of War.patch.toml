@@ -7,7 +7,7 @@ hash = "1B591620508434A2" # default.xex
     name = "60 FPS"
     desc = "Increases the default vsync target to 60 FPS. See note about framerate patches in the README. Above 100 FPS there can be timing-related physics and audio issues."
     author = "boma"
-    is_enabled = false
+    is_enabled = true
 
     [[patch.be8]]
         address = 0x8223e7bb # D3DPRESENT_INTERVAL_ONE
@@ -17,7 +17,7 @@ hash = "1B591620508434A2" # default.xex
     name = "Black Shading Fix"
     desc = "Solves most dynamic lighting artifacts caused by an issue with light environments and MSAA tiling."
     author = "boma"
-    is_enabled = false
+    is_enabled = true
 
     [[patch.be8]]
         address = 0x82bb6bbb # GTilingMode = 0
@@ -29,7 +29,7 @@ hash = "1B591620508434A2" # default.xex
 [[patch]]
     name = "Disable Motion Blur"
     author = "illusion"
-    is_enabled = false
+    is_enabled = true
 
     [[patch.be16]]
         address = 0x8228fa40
@@ -51,7 +51,7 @@ hash = "1B591620508434A2" # default.xex
     name = "8x Anisotropic Filtering"
     desc = "Game does not natively support 16x filtering."
     author = "boma"
-    is_enabled = false
+    is_enabled = true
 
     [[patch.be32]]
         address = 0x82487484
@@ -70,7 +70,7 @@ hash = "1B591620508434A2" # default.xex
 [[patch]]
     name = "Show Frametime"
     author = "Sowa_95"
-    is_enabled = false
+    is_enabled = true
 
     [[patch.be8]]
         address = 0x82bfa0cc
